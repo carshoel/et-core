@@ -1,0 +1,59 @@
+a = {"x": 34, "name": "ae"}
+
+forin(v,k,d=a){
+    print("key:{}, value:{}".format(k, v))
+}
+
+a = ["age", 1, a]
+
+forin(item, index,date_list=a){
+    print("{}: {}".format(index, item))
+}
+
+
+
+f1(a1 = "norm arg"){
+    print(a1)
+    print(a[2].x)
+    return a1
+}
+b = f1()
+print(b)
+
+//测试带参数和返回值的闭包函数，以及局部变量的值引用
+f2(x){
+    m = "123"
+    f3(n, m=m, x=x){
+        r = "n={}, m={}, x={}".format(n, m, x)
+        return r
+    }
+    return f3
+}
+
+print("*" * 10)
+tem = f2("good")
+t = tem("yuwei")
+print(t)
+
+print("*" * 20)
+
+a = 1
+backrun(n = "m", i=2){
+    print(a++)
+    if (a > 5){
+        return //关闭线程
+    }
+}
+
+print("-" * 10)
+
+return "world" //可以直接结束所有后台线程，然后结束主进程
+
+while(a<5){
+    print("{} < 5".format(a))
+    wait_time(1)
+}
+
+while(a< 3000){
+    print(a++)
+}

@@ -1,0 +1,45 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+
+# 构建 / 打包缓存
+build/
+dist/
+
+# 测试 / 类型检查缓存
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# 虚拟环境与本地配置
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ===== Node / IDE 前端（未来 ide 目录）=====
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# ===== 编辑器 / 系统 =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ===== 日志 / 临时文件 =====
+*.log
+*.tmp
+*.temp
